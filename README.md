@@ -9,8 +9,6 @@
 
 I'm a Data Science and Software Development student from Malaysia who builds cross-platform apps and intelligent systems, usually with a coffee in hand and usually after midnight.
 
-I like turning half-formed ideas into working products over a weekend, which is why most of what I ship starts life at a hackathon. My recent work spans AI tools for financial advisors, computer vision for chicken farms, on-chain trading games, and ENS identities for AI agents.
-
 <table>
   <tr>
     <td align="center"><strong>5</strong><br>Hackathon Placements</td>
