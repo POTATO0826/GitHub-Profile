@@ -1,138 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="t d">
   <title id="t">Vince Loo — A Tech Guy who is caffeinated.</title>
-  <desc id="d">Data Science and Software Development student in Malaysia. Night owl. Eight hackathons entered in 2026, four placed.</desc>
+  <desc id="d">A page from Vince Loo's field notes. Data Science and Software Development student in Malaysia, night owl. Hackathons in 2026: eight entered, four placed.</desc>
 
   <style>
-    .serif  { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; }
-    .mono   { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .sans   { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .serif { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; }
+    .mono  { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans  { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
 
-    .in     { opacity: 0; animation: rise 620ms cubic-bezier(0.16, 1, 0.30, 1) forwards; }
-    .b1     { animation-delay:  60ms; }
-    .b2     { animation-delay: 180ms; }
-    .b3     { animation-delay: 300ms; }
-    .b4     { animation-delay: 420ms; }
-    .b5     { animation-delay: 560ms; }
-    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+    /* One curve, one entrance: the page is written left to right, then stamped. */
+    .in { opacity: 0; animation: rise 620ms cubic-bezier(0.16, 1, 0.30, 1) forwards; }
+    .b1 { animation-delay:  80ms; }
+    .b2 { animation-delay: 180ms; }
+    .b3 { animation-delay: 280ms; }
+    .b4 { animation-delay: 380ms; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
-    .orbit  { transform-origin: 985px 205px; animation: spin 18s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    .slot  { opacity: 0; animation: fade 400ms ease-out 520ms forwards; }
+    @keyframes fade { to { opacity: 1; } }
 
-    .steam  { fill: none; stroke: #a1a1aa; stroke-width: 3; stroke-linecap: round; opacity: 0; animation: steam 3.2s ease-in-out infinite; }
-    .s2     { animation-delay: 0.9s; }
-    .s3     { animation-delay: 1.8s; }
-    @keyframes steam {
-      0%   { opacity: 0;    transform: translateY(8px); }
-      35%  { opacity: 0.85; }
-      100% { opacity: 0;    transform: translateY(-16px); }
-    }
-
-    .cursor { animation: blink 1.1s steps(1) infinite; }
-    @keyframes blink { 50% { fill-opacity: 0; } }
-
-    .twinkle { animation: twinkle 4s ease-in-out infinite; }
-    .t2 { animation-delay: 1.3s; } .t3 { animation-delay: 2.6s; }
-    @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.9; } }
-
-    .stamp  { animation: breathe 3.2s ease-in-out infinite; }
-    @keyframes breathe { 0%, 100% { opacity: 0.72; } 50% { opacity: 1; } }
+    .stamp { opacity: 0; transform-box: fill-box; transform-origin: center; animation: stamp 420ms cubic-bezier(0.16, 1, 0.30, 1) forwards; }
+    .s1 { animation-delay:  900ms; }
+    .s2 { animation-delay: 1080ms; }
+    .s3 { animation-delay: 1260ms; }
+    .s4 { animation-delay: 1440ms; }
+    @keyframes stamp { from { opacity: 0; transform: scale(1.7) rotate(-14deg); } to { opacity: 1; transform: none; } }
 
     @media (prefers-reduced-motion: reduce) {
-      .in, .steam, .orbit, .cursor, .twinkle, .stamp { animation: none; }
-      .in { opacity: 1; }
-      .steam { opacity: 0.7; }
+      .in, .slot, .stamp { animation: none; opacity: 1; transform: none; }
     }
   </style>
 
   <defs>
-    <radialGradient id="glow" cx="985" cy="205" r="210" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#8cafff" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#8cafff" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="card"><rect width="1200" height="440" rx="20"/></clipPath>
+    <clipPath id="page"><rect width="1200" height="300" rx="16"/></clipPath>
   </defs>
 
-  <g clip-path="url(#card)">
-    <rect width="1200" height="440" fill="#000"/>
-    <rect width="1200" height="440" fill="url(#glow)"/>
+  <g clip-path="url(#page)">
+    <rect width="1200" height="300" fill="#000"/>
 
-    <!-- starfield -->
-    <g fill="#fff">
-      <circle class="twinkle"    cx="118"  cy="52"  r="1.2"/>
-      <circle class="twinkle t2" cx="342"  cy="34"  r="1"/>
-      <circle class="twinkle t3" cx="566"  cy="70"  r="1.3"/>
-      <circle class="twinkle"    cx="704"  cy="148" r="1"/>
-      <circle class="twinkle t2" cx="760"  cy="46"  r="1.2"/>
-      <circle class="twinkle t3" cx="1132" cy="64"  r="1.2"/>
-      <circle class="twinkle"    cx="1150" cy="330" r="1"/>
-      <circle class="twinkle t2" cx="812"  cy="352" r="1.2"/>
-      <circle class="twinkle t3" cx="640"  cy="300" r="1"/>
-      <circle class="twinkle"    cx="486"  cy="382" r="1"/>
+    <!-- coffee ring: the mug was here -->
+    <g fill="none" stroke="#c9a070" transform="rotate(-18 668 132)">
+      <circle cx="668" cy="132" r="56" stroke-width="5"   stroke-opacity="0.16" stroke-dasharray="150 9 90 5 120 14"/>
+      <circle cx="668" cy="132" r="51" stroke-width="1.5" stroke-opacity="0.22" stroke-dasharray="60 20 130 12 80 30"/>
+      <circle cx="668" cy="132" r="60" stroke-width="1"   stroke-opacity="0.12" stroke-dasharray="40 26 100 18"/>
     </g>
 
-    <!-- notebook margin: punch holes + rule -->
-    <g fill="#000" stroke="#ffffff" stroke-opacity="0.18">
-      <circle cx="38" cy="90"  r="7"/>
-      <circle cx="38" cy="220" r="7"/>
-      <circle cx="38" cy="350" r="7"/>
+    <!-- notebook furniture: punch holes, margin rule, ruled lines -->
+    <g fill="#000" stroke="#fff" stroke-opacity="0.2">
+      <circle cx="36" cy="62"  r="7"/>
+      <circle cx="36" cy="150" r="7"/>
+      <circle cx="36" cy="238" r="7"/>
     </g>
-    <line x1="70" y1="0" x2="70" y2="440" stroke="#ffffff" stroke-opacity="0.10"/>
+    <line x1="72" y1="0" x2="72" y2="300" stroke="#fff" stroke-opacity="0.12"/>
+    <line x1="72" y1="232" x2="1200" y2="232" stroke="#fff" stroke-opacity="0.08"/>
 
-    <!-- name -->
-    <g class="in b1">
-      <text x="104" y="176" class="serif" font-size="124" fill="#fafafa" letter-spacing="-1.5">Vince <tspan font-style="italic">Loo</tspan></text>
-    </g>
+    <!-- left: who -->
+    <text x="106" y="54" class="mono in b1" font-size="15" fill="#a1a1aa" letter-spacing="1.6">@POTATO0826  ·  MALAYSIA</text>
 
-    <!-- handle -->
-    <g class="in b2">
-      <text x="108" y="222" class="mono" font-size="15" fill="#71717a" letter-spacing="1">@POTATO0826  ·  MALAYSIA</text>
-    </g>
+    <text x="102" y="160" class="serif in b2" font-size="104" fill="#fafafa" letter-spacing="-1.5">Vince <tspan font-style="italic">Loo</tspan></text>
 
-    <!-- headline -->
-    <g class="in b3">
-      <text x="108" y="274" class="sans" font-size="25" fill="#d4d4d8">A Tech Guy who is caffeinated.<tspan class="cursor" fill="#e0b357" dx="6">▍</tspan></text>
-    </g>
+    <text x="106" y="204" class="sans in b3" font-size="24" fill="#d4d4d8">A Tech Guy who is caffeinated.</text>
 
-    <!-- chips -->
-    <g class="in b4 mono" font-size="12.5" fill="#d4d4d8" letter-spacing="1.8" text-anchor="middle">
-      <rect x="108" y="304" width="154" height="34" rx="17" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="4 4"/>
-      <text x="185" y="326">DATA SCIENCE</text>
-      <rect x="274" y="304" width="154" height="34" rx="17" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="4 4"/>
-      <text x="351" y="326">SOFTWARE DEV</text>
-      <rect x="440" y="304" width="146" height="34" rx="17" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-dasharray="4 4"/>
-      <text x="513" y="326">☾ NIGHT OWL</text>
-    </g>
+    <text x="106" y="268" class="mono in b4" font-size="14.5" fill="#a1a1aa" letter-spacing="2">DATA SCIENCE  ·  SOFTWARE DEV  ·  NIGHT OWL</text>
 
-    <!-- field-notes stamp -->
-    <g class="in b5">
-      <line x1="70" y1="378" x2="1200" y2="378" stroke="#ffffff" stroke-opacity="0.10"/>
-      <text x="108" y="410" class="mono stamp" font-size="12" fill="#e0b357" letter-spacing="2.2">FIELD NOTES  ·  EIGHT HACKATHONS ENTERED, FOUR PLACED  ·  2026</text>
+    <!-- right: the 2026 hackathon tally. Gold marks an award and nothing else. -->
+    <text x="1132" y="54" class="mono in b1" font-size="15" fill="#a1a1aa" letter-spacing="1.6" text-anchor="end">HACKATHONS  ·  2026</text>
+
+    <g class="slot" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="4 4">
+      <circle cx="824"  cy="118" r="16"/>
+      <circle cx="868"  cy="118" r="16"/>
+      <circle cx="912"  cy="118" r="16"/>
+      <circle cx="956"  cy="118" r="16"/>
+      <circle cx="1000" cy="118" r="16"/>
+      <circle cx="1044" cy="118" r="16"/>
+      <circle cx="1088" cy="118" r="16"/>
+      <circle cx="1132" cy="118" r="16"/>
     </g>
 
-    <!-- coffee in orbit -->
-    <g class="in b2">
-      <circle cx="985" cy="205" r="128" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
-      <circle cx="985" cy="205" r="104" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.2"/>
-
-      <g class="orbit">
-        <circle cx="985" cy="77" r="9" fill="#c8dcff" opacity="0.25"/>
-        <circle cx="985" cy="77" r="4" fill="#fff"/>
-      </g>
-
-      <!-- steam -->
-      <path class="steam"    d="M958 168 q-9 -11 0 -22 q9 -11 0 -22"/>
-      <path class="steam s2" d="M982 168 q-9 -11 0 -22 q9 -11 0 -22"/>
-      <path class="steam s3" d="M1006 168 q-9 -11 0 -22 q9 -11 0 -22"/>
-
-      <!-- cup -->
-      <g fill="none" stroke="#fafafa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M938 186 h88 v34 a34 34 0 0 1 -34 34 h-20 a34 34 0 0 1 -34 -34 z" fill="#111"/>
-        <path d="M1026 196 h8 a16 16 0 0 1 0 32 h-9"/>
-        <path d="M928 270 h108"/>
-      </g>
-      <path d="M940 194 h84" stroke="#e0b357" stroke-width="4" stroke-linecap="round"/>
+    <g stroke="#e0b357" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <g class="stamp s1"><circle cx="824" cy="118" r="16" fill="#1c1608"/><path d="M817 118.5 l5 5 l9 -10.5" fill="none"/></g>
+      <g class="stamp s2"><circle cx="868" cy="118" r="16" fill="#1c1608"/><path d="M861 118.5 l5 5 l9 -10.5" fill="none"/></g>
+      <g class="stamp s3"><circle cx="912" cy="118" r="16" fill="#1c1608"/><path d="M905 118.5 l5 5 l9 -10.5" fill="none"/></g>
+      <g class="stamp s4"><circle cx="956" cy="118" r="16" fill="#1c1608"/><path d="M949 118.5 l5 5 l9 -10.5" fill="none"/></g>
     </g>
 
-    <rect x="0.5" y="0.5" width="1199" height="439" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+    <g class="in b4">
+      <text x="806" y="210" class="serif" font-size="64" fill="#e0b357">4</text>
+      <text x="846" y="204" class="mono" font-size="15" fill="#e0b357" letter-spacing="1.6">PLACED</text>
+      <text x="986" y="210" class="serif" font-size="64" fill="#fafafa">8</text>
+      <text x="1026" y="204" class="mono" font-size="15" fill="#a1a1aa" letter-spacing="1.6">ENTERED</text>
+    </g>
+
+    <text x="1132" y="268" class="mono in b4" font-size="14.5" fill="#a1a1aa" letter-spacing="2" text-anchor="end">VINCEPROFILE.SPACE</text>
+
+    <rect x="0.5" y="0.5" width="1199" height="299" rx="16" fill="none" stroke="#fff" stroke-opacity="0.16"/>
   </g>
 </svg>
