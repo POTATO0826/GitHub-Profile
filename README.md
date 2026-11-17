@@ -1,5 +1,8 @@
 <a href="https://vinceprofile.space/">
-  <img src="./assets/banner.gif" width="100%" alt="An ASCII-art portrait that slowly opens its eyes, from Vince's GODEYE project." />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-transparent.gif" />
+    <img src="./assets/banner.gif" width="100%" alt="An ASCII-art portrait that slowly opens its eyes, from Vince's GODEYE project." />
+  </picture>
 </a>
 
 # Hi, I'm Vince
