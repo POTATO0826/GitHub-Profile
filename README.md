@@ -1,5 +1,5 @@
 <a href="https://vinceprofile.space/">
-  <img src="./assets/header.svg" width="100%" alt="Vince Loo — A Tech Guy who is caffeinated. Hackathons in 2026: nine entered, five placed." />
+  <img src="./assets/banner.gif" width="100%" alt="An ASCII-art portrait that slowly opens its eyes, from Vince's GODEYE project." />
 </a>
 
 # Hi, I'm Vince
