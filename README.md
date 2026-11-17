@@ -1,18 +1,18 @@
 <a href="https://vinceprofile.space/">
-  <img src="./assets/header.svg" width="100%" alt="Vince Loo — A Tech Guy who is caffeinated. Hackathons in 2026: eight entered, four placed." />
+  <img src="./assets/header.svg" width="100%" alt="Vince Loo — A Tech Guy who is caffeinated. Hackathons in 2026: nine entered, five placed." />
 </a>
 
 # Hi, I'm Vince
 
 I'm a Data Science and Software Development student from Malaysia who builds cross-platform apps and intelligent systems, usually with a coffee in hand and usually after midnight.
 
-I like turning half-formed ideas into working products over a weekend, which is why most of what I ship starts life at a hackathon. My recent work spans AI tools for financial advisors, computer vision for chicken farms, and on-chain trading games.
+I like turning half-formed ideas into working products over a weekend, which is why most of what I ship starts life at a hackathon. My recent work spans AI tools for financial advisors, computer vision for chicken farms, on-chain trading games, and ENS identities for AI agents.
 
 <table>
   <tr>
-    <td align="center"><strong>4</strong><br>Hackathon Placements</td>
+    <td align="center"><strong>5</strong><br>Hackathon Placements</td>
     <td align="center"><strong>2</strong><br>Champion Titles</td>
-    <td align="center"><strong>8</strong><br>Hackathons Entered</td>
+    <td align="center"><strong>9</strong><br>Hackathons Entered</td>
   </tr>
 </table>
 
@@ -20,6 +20,7 @@ I like turning half-formed ideas into working products over a weekend, which is 
 
 ### 2026
 
+- [ETHGlobal Tokyo 2026](https://github.com/derek2403/relay): 1st place in ENS, with **Relay** *(an API relay where a company's people and AI agents are ENS names, and provider keys never leave the relay)*
 - [MUBA 2026](https://github.com/POTATO0826/MUBA): 1st Runner-Up, Thetanuts AI Track, with **ThetaDuel** *(options trading as a 1v1 duel on a live price chart)*
 - [DevLeague 2026 by TalentLabs](https://github.com/POTATO0826/CHADBUDD): Bonus Track Winner, Superteam MY, with **ChadBuddy** *(spots client relationships going cold from an advisor's Telegram history)*
 - [IIMS Hackathon 2026, Nepal](https://github.com/POTATO0826/IIMS-Hackathon): Champion, Open Track, with **Finchpoint** *(an AI that watches your chickens and sends a coop check-up every morning)*
