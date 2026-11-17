@@ -12,7 +12,7 @@ I'm a Data Science and Software Development student from Malaysia who builds cro
 <table>
   <tr>
     <td align="center"><strong>5</strong><br>Hackathon Placements</td>
-    <td align="center"><strong>2</strong><br>Champion Titles</td>
+    <td align="center"><strong>3</strong><br>Champion Titles</td>
     <td align="center"><strong>9</strong><br>Hackathons Entered</td>
   </tr>
 </table>
